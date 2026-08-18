@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book an Appointment | Aayurastra Ayurvedic Clinic</title>
+    <meta name="description" content="Schedule your consultation with Aayurastra Ayurvedic Clinic. Prepare your appointment request easily online or via WhatsApp.">
+    <link rel="canonical" href="https://www.aayurastra.com/appointment.html">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="site-header" id="site-header">
+        <div class="container header-container">
+            <a href="index.html" class="logo" aria-label="Aayurastra Home">
+                <span class="logo-icon" aria-hidden="true">🌿</span>
+                <span class="logo-text">Aayurastra</span>
+            </a>
+            <nav class="main-nav" id="main-nav" aria-label="Main Navigation">
+                <ul class="nav-list">
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li><a href="about.html" class="nav-link">About</a></li>
+                    <li><a href="treatments.html" class="nav-link">Treatments</a></li>
+                    <li><a href="doctors.html" class="nav-link">Practitioners</a></li>
+                    <li><a href="appointment.html" class="nav-link active">Appointment</a></li>
+                    <li><a href="contact.html" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="header-actions">
+                <a href="appointment.html" class="btn btn-primary btn-sm">Book Consultation</a>
+                <button class="hamburger" id="hamburger-btn" aria-label="Toggle Navigation Menu" aria-expanded="false" aria-controls="main-nav">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main id="main-content">
+        <!-- Page Hero Banner -->
+        <section class="page-hero bg-cream section-padding text-center">
+            <div class="container" data-animate="fade-up">
+                <span class="badge">Consultation Booking</span>
+                <h1>Book Your Appointment</h1>
+                <p class="max-w-700 mx-auto">Fill out the form below to prepare your consultation request or connect directly via WhatsApp.</p>
+            </div>
+        </section>
+
+        <!-- Appointment Form Section -->
+        <section class="section-padding">
+            <div class="container max-w-800">
+                <div class="form-wrapper" data-animate="fade-up">
+                    <form id="appointment-form" novalidate>
+                        <div class="grid-2">
+                            <div class="form-group">
+                                <label for="fullName">Full Name <span class="required">*</span></label>
+                                <input type="text" id="fullName" name="fullName" required placeholder="Enter your full name">
+                                <span class="error-message" id="fullName-error">Please enter your name.</span>
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">Phone Number <span class="required">*</span></label>
+                                <input type="tel" id="phone" name="phone" required placeholder="e.g. +91 98765 43210">
+                                <span class="error-message" id="phone-error">Please enter a valid phone number.</span>
+                            </div>
+                        </div>
+
+                        <div class="grid-2">
+                            <div class="form-group">
+                                <label for="email">Email Address <span class="required">*</span></label>
+                                <input type="email" id="email" name="email" required placeholder="e.g. name@example.com">
+                                <span class="error-message" id="email-error">Please enter a valid email address.</span>
+                            </div>
+                            <div class="form-group">
+                                <label for="consultationType">Consultation Type <span class="required">*</span></label>
+                                <select id="consultationType" name="consultationType" required>
+                                    <option value="">Select consultation type</option>
+                                    <option value="Initial Consultation">Initial Consultation</option>
+                                    <option value="Follow-up Review">Follow-up Review</option>
+                                    <option value="Treatment Inquiry">Treatment Inquiry</option>
+                                    <option value="Lifestyle Coaching">Lifestyle Coaching</option>
+                                </select>
+                                <span class="error-message" id="consultationType-error">Please select a consultation type.</span>
+                            </div>
+                        </div>
+
+                        <div class="grid-2">
+                            <div class="form-group">
+                                <label for="preferredDate">Preferred Date <span class="required">*</span></label>
+                                <input type="date" id="preferredDate" name="preferredDate" required>
+                                <span class="error-message" id="preferredDate-error">Please select a valid future date.</span>
+                            </div>
+                            <div class="form-group">
+                                <label for="preferredTime">Preferred Time <span class="required">*</span></label>
+                                <select id="preferredTime" name="preferredTime" required>
+                                    <option value="">Select time slot</option>
+                                    <option value="Morning (09:00 AM - 12:00 PM)">Morning (09:00 AM - 12:00 PM)</option>
+                                    <option value="Afternoon (12:00 PM - 04:00 PM)">Afternoon (12:00 PM - 04:00 PM)</option>
+                                    <option value="Evening (04:00 PM - 07:00 PM)">Evening (04:00 PM - 07:00 PM)</option>
+                                </select>
+                                <span class="error-message" id="preferredTime-error">Please select a time slot.</span>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="treatmentConcern">Specific Treatment or Health Concern</label>
+                            <input type="text" id="treatmentConcern" name="treatmentConcern" placeholder="e.g. Panchakarma, Abhyanga, Digestive Wellness">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Additional Notes / Message</label>
+                            <textarea id="message" name="message" rows="4" placeholder="Briefly describe your health goals or questions"></textarea>
+                        </div>
+
+                        <div class="form-actions text-center mt-4">
+                            <button type="submit" class="btn btn-primary btn-lg" id="submit-btn">
+                                <span class="btn-text">Prepare Appointment Request</span>
+                                <span class="spinner" aria-hidden="true"></span>
+                            </button>
+                        </div>
+
+                        <div id="form-success-box" class="form-success-box hidden">
+                            <h3>Appointment Request Prepared</h3>
+                            <p>Your appointment request has been prepared. Please confirm your booking through WhatsApp or phone.</p>
+                            <div class="mt-3">
+                                <a href="#" class="btn btn-secondary whatsapp-cta-btn">Confirm via WhatsApp</a>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-grid">
+            <div class="footer-col">
+                <a href="index.html" class="logo footer-logo">
+                    <span class="logo-icon" aria-hidden="true">🌿</span>
+                    <span class="logo-text">Aayurastra</span>
+                </a>
+                <p>Authentic Ayurvedic care for a healthier, balanced life. Ancient Wisdom. Modern Wellness.</p>
+                <div class="social-icons" aria-label="Social Media Links">
+                    <a href="#" aria-label="Facebook">FB</a>
+                    <a href="#" aria-label="Instagram">IG</a>
+                    <a href="#" aria-label="LinkedIn">IN</a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="treatments.html">Treatments</a></li>
+                    <li><a href="doctors.html">Practitioners</a></li>
+                    <li><a href="appointment.html">Appointment</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Treatments</h4>
+                <ul>
+                    <li><a href="treatment-detail.html?treatment=panchakarma">Panchakarma</a></li>
+                    <li><a href="treatment-detail.html?treatment=abhyanga">Abhyanga</a></li>
+                    <li><a href="treatment-detail.html?treatment=shirodhara">Shirodhara</a></li>
+                    <li><a href="treatment-detail.html?treatment=swedana">Swedana</a></li>
+                    <li><a href="treatments.html">View All</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Contact Us</h4>
+                <p class="footer-contact-info">
+                    <strong>Address:</strong> <span class="config-address">[CLINIC_ADDRESS]</span><br>
+                    <strong>Phone:</strong> <span class="config-phone">[PHONE_NUMBER]</span><br>
+                    <strong>Email:</strong> <span class="config-email">[EMAIL]</span>
+                </p>
+                <a href="#" class="btn btn-secondary btn-sm mt-3 whatsapp-cta-btn">Chat on WhatsApp</a>
+            </div>
+        </div>
+        <div class="footer-bottom text-center">
+            <div class="container">
+                <p>&copy; 2026 Aayurastra Ayurvedic Clinic. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <button id="back-to-top" aria-label="Back to top">↑</button>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | Aayurastra Ayurvedic Clinic</title>
+    <meta name="description" content="Get in touch with Aayurastra Ayurvedic Clinic. Find our location, opening hours, contact details, and FAQs.">
+    <link rel="canonical" href="https://www.aayurastra.com/contact.html">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="site-header" id="site-header">
+        <div class="container header-container">
+            <a href="index.html" class="logo" aria-label="Aayurastra Home">
+                <span class="logo-icon" aria-hidden="true">🌿</span>
+                <span class="logo-text">Aayurastra</span>
+            </a>
+            <nav class="main-nav" id="main-nav" aria-label="Main Navigation">
+                <ul class="nav-list">
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li><a href="about.html" class="nav-link">About</a></li>
+                    <li><a href="treatments.html" class="nav-link">Treatments</a></li>
+                    <li><a href="doctors.html" class="nav-link">Practitioners</a></li>
+                    <li><a href="appointment.html" class="nav-link">Appointment</a></li>
+                    <li><a href="contact.html" class="nav-link active">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="header-actions">
+                <a href="appointment.html" class="btn btn-primary btn-sm">Book Consultation</a>
+                <button class="hamburger" id="hamburger-btn" aria-label="Toggle Navigation Menu" aria-expanded="false" aria-controls="main-nav">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main id="main-content">
+        <!-- Page Hero Banner -->
+        <section class="page-hero bg-cream section-padding text-center">
+            <div class="container" data-animate="fade-up">
+                <span class="badge">Get in Touch</span>
+                <h1>Contact Aayurastra</h1>
+                <p class="max-w-700 mx-auto">We are here to answer your questions and assist with your wellness journey.</p>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="section-padding">
+            <div class="container grid-2">
+                <!-- Info Column -->
+                <div data-animate="fade-up">
+                    <h2>Clinic Information</h2>
+                    <p class="mb-4">Visit our serene clinic or reach out to us via phone, email, or WhatsApp.</p>
+                    <ul class="contact-info-list">
+                        <li>
+                            <strong>Address:</strong><br>
+                            <span class="config-address">[CLINIC_ADDRESS]</span>
+                        </li>
+                        <li>
+                            <strong>Phone:</strong><br>
+                            <span class="config-phone">[PHONE_NUMBER]</span>
+                        </li>
+                        <li>
+                            <strong>Email:</strong><br>
+                            <span class="config-email">[EMAIL]</span>
+                        </li>
+                        <li>
+                            <strong>Opening Hours:</strong><br>
+                            Monday – Saturday: 09:00 AM – 07:00 PM<br>
+                            Sunday: Closed / By Appointment Only
+                        </li>
+                    </ul>
+                    <div class="mt-4">
+                        <a href="#" class="btn btn-secondary whatsapp-cta-btn">Connect via WhatsApp</a>
+                    </div>
+                </div>
+
+                <!-- Form Column -->
+                <div class="form-wrapper" data-animate="fade-up" data-delay="100">
+                    <h3>Send Us a Message</h3>
+                    <form id="contact-form" novalidate class="mt-3">
+                        <div class="form-group">
+                            <label for="contactName">Full Name <span class="required">*</span></label>
+                            <input type="text" id="contactName" name="contactName" required placeholder="Enter your full name">
+                            <span class="error-message" id="contactName-error">Please enter your name.</span>
+                        </div>
+                        <div class="form-group">
+                            <label for="contactEmail">Email Address <span class="required">*</span></label>
+                            <input type="email" id="contactEmail" name="contactEmail" required placeholder="Enter your email">
+                            <span class="error-message" id="contactEmail-error">Please enter a valid email address.</span>
+                        </div>
+                        <div class="form-group">
+                            <label for="contactMessage">Message <span class="required">*</span></label>
+                            <textarea id="contactMessage" name="contactMessage" rows="4" required placeholder="How can we assist you?"></textarea>
+                            <span class="error-message" id="contactMessage-error">Please enter your message.</span>
+                        </div>
+                        <div class="form-actions mt-4">
+                            <button type="submit" class="btn btn-primary w-full" id="contact-submit-btn">
+                                <span class="btn-text">Send Message</span>
+                                <span class="spinner" aria-hidden="true"></span>
+                            </button>
+                        </div>
+                        <div id="contact-success-box" class="form-success-box hidden mt-3">
+                            <p>Thank you for your message. We will respond shortly.</p>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <!-- Google Maps Placeholder -->
+        <section class="section-padding bg-cream">
+            <div class="container text-center" data-animate="fade-up">
+                <h2>Our Location</h2>
+                <p class="mb-4"><span class="config-address">[CLINIC_ADDRESS]</span></p>
+                <div class="map-placeholder">
+                    <div class="map-placeholder-content">
+                        <span>📍 [Google Maps Embed Placeholder]</span>
+                        <small>Interactive map loads when clinic address is configured</small>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Accordion Section -->
+        <section class="section-padding">
+            <div class="container max-w-800">
+                <div class="section-header text-center" data-animate="fade-up">
+                    <h2>Frequently Asked Questions</h2>
+                    <p>Common questions about our consultations and therapies</p>
+                </div>
+                <div class="faq-accordion" data-animate="fade-up">
+                    <div class="faq-item">
+                        <button class="faq-question" aria-expanded="false">
+                            <span>What should I expect during my first consultation?</span>
+                            <span class="faq-icon">+</span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Your first consultation involves a comprehensive evaluation of your health history, lifestyle, and Prakriti (dosha constitution) through traditional pulse diagnosis and detailed discussion with our BAMS practitioner.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-question" aria-expanded="false">
+                            <span>Are Ayurvedic treatments customized?</span>
+                            <span class="faq-icon">+</span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Yes. Ayurveda recognizes that every individual has a unique metabolic constitution. All herbal formulas, dietary guidelines, and therapies are tailored specifically to your doshic balance.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-question" aria-expanded="false">
+                            <span>How should I prepare for Panchakarma?</span>
+                            <span class="faq-icon">+</span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Preparation (Purvakarma) typically involves internal oleation and herbal steaming guided step-by-step by your practitioner prior to main detoxification procedures.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-question" aria-expanded="false">
+                            <span>Do I need to follow a special diet during treatment?</span>
+                            <span class="faq-icon">+</span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Diet (Ahara) is considered half the treatment in Ayurveda. Your practitioner will provide customized dietary guidelines to support digestion and enhance therapeutic outcomes.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-grid">
+            <div class="footer-col">
+                <a href="index.html" class="logo footer-logo">
+                    <span class="logo-icon" aria-hidden="true">🌿</span>
+                    <span class="logo-text">Aayurastra</span>
+                </a>
+                <p>Authentic Ayurvedic care for a healthier, balanced life. Ancient Wisdom. Modern Wellness.</p>
+                <div class="social-icons" aria-label="Social Media Links">
+                    <a href="#" aria-label="Facebook">FB</a>
+                    <a href="#" aria-label="Instagram">IG</a>
+                    <a href="#" aria-label="LinkedIn">IN</a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="treatments.html">Treatments</a></li>
+                    <li><a href="doctors.html">Practitioners</a></li>
+                    <li><a href="appointment.html">Appointment</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Treatments</h4>
+                <ul>
+                    <li><a href="treatment-detail.html?treatment=panchakarma">Panchakarma</a></li>
+                    <li><a href="treatment-detail.html?treatment=abhyanga">Abhyanga</a></li>
+                    <li><a href="treatment-detail.html?treatment=shirodhara">Shirodhara</a></li>
+                    <li><a href="treatment-detail.html?treatment=swedana">Swedana</a></li>
+                    <li><a href="treatments.html">View All</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Contact Us</h4>
+                <p class="footer-contact-info">
+                    <strong>Address:</strong> <span class="config-address">[CLINIC_ADDRESS]</span><br>
+                    <strong>Phone:</strong> <span class="config-phone">[PHONE_NUMBER]</span><br>
+                    <strong>Email:</strong> <span class="config-email">[EMAIL]</span>
+                </p>
+                <a href="#" class="btn btn-secondary btn-sm mt-3 whatsapp-cta-btn">Chat on WhatsApp</a>
+            </div>
+        </div>
+        <div class="footer-bottom text-center">
+            <div class="container">
+                <p>&copy; 2026 Aayurastra Ayurvedic Clinic. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <button id="back-to-top" aria-label="Back to top">↑</button>
+    <script src="script.js"></script>
+</body>
+</html>
